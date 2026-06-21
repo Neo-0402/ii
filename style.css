@@ -1,37 +1,28 @@
+/* 夏日可愛風格 CSS 修改 */
+
 #RainBow{
-	opacity:0.5;
+	opacity:0.3;
 	position:absolute;
 	width:350%;
 	height:120%;
-	background: url(image/bg_Rainbow.png);
+	background: linear-gradient(135deg, rgba(255,200,100,0.3) 0%, rgba(255,150,150,0.3) 25%, rgba(200,150,255,0.3) 50%, rgba(100,200,255,0.3) 75%, rgba(100,255,200,0.3) 100%);
 	background-size:100%;
 	background-repeat:no-repeat; 
 	left:0%;
-	bottom:-10%;/*84%*/
+	bottom:-10%;
 	z-index:0;	  
 }
+
 /* 設定body */
 body {
-	/*
-	overflow-Y右邊垂直捲軸 設為hidden隱藏
-	background-color背景底色 設為#000黑色
-	font-family網頁字型 設為Microsoft JhengHei, Arial 微軟正黑體,Arial
-	*/	
 	overflow-Y:hidden;
-    background-color: #000;
+    background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%);
     text-align: center;    
-    font-family: Microsoft JhengHei, Arial;    
+    font-family: 'Comic Sans MS', 'Microsoft JhengHei', Arial, sans-serif;    
 }
 
 /* 設定內容顯示區域 */
 #content {
-	/*
-	min-height最小高度 設為100%
-	list-style清單風格 設為none不顯示
-	margin邊界 設為0
-	padding展開設定為0
-	white-space段落文本 設為nowrap 不斷行	
-	*/
     min-height: 100%;	
 	list-style: none;     
     margin: 0;
@@ -41,19 +32,11 @@ body {
 
 /* 設定超連結 */
 a {	
-	/*
-	color文字顏色 設為#F26522 橙橘色
-	*/
-    color: #F26522;
+    color: #FF6B9D;
 }
 
 /* 繪製 背景 */
 #Bg{
-	/*
-	position位置 設為absolute絕對位置
-	width全景寬度 設為502% 
-	height全景高度 設為100%
-	*/
 	position:absolute;
 	width:502%;
 	height:100%;
@@ -61,7 +44,7 @@ a {
 	background-size:100%;
 	background-repeat:repeat; 
 	left:0%;
-	top:0%;/*84%*/
+	top:0%;
 	z-index:0;	   
 }
 
@@ -74,7 +57,7 @@ a {
 	background-size:139px 203px;
 	background-repeat:no-repeat; 
 	left:35%;
-	bottom:0%;/*84%*/
+	bottom:0%;
 	z-index:3;
 	margin:-186px 0 0 -168px;	
     -webkit-animation-iteration-count:infinite;	
@@ -84,41 +67,35 @@ a {
 
 /* 動畫 人物右走 */
 @-webkit-keyframes RWalk{
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
       0% {			
-			background: url(image/player_Rwalk1.png);
-			background-size:139px 203px;
+		background: url(image/player_Rwalk1.png);
+		background-size:139px 203px;
 		 }
      50% {
-			background: url(image/player_Rwalk2.png);
-			background-size:139px 203px;			
+		background: url(image/player_Rwalk2.png);
+		background-size:139px 203px;			
 		 }
     100% 
 		 {			
-			background: url(image/player_Rwalk1.png);
-			background-size:139px 203px;
+		background: url(image/player_Rwalk1.png);
+		background-size:139px 203px;
 		 }
 }
 
 /* 動畫 人物左走 */
 @-webkit-keyframes LWalk{
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
       0% {			
-			background: url(image/player_Rwalk2.png);	
-			background-size:139px 203px;
+		background: url(image/player_Rwalk2.png);	
+		background-size:139px 203px;
 		 }
      50% {
-			background: url(image/player_Rwalk1.png);
-			background-size:139px 203px;
+		background: url(image/player_Rwalk1.png);
+		background-size:139px 203px;
 		 }
     100% 
 		 {			
-			background: url(image/player_Rwalk2.png);
-			background-size:139px 203px;
+		background: url(image/player_Rwalk2.png);
+		background-size:139px 203px;
 		 }
 }
 
@@ -131,7 +108,7 @@ a {
 	background-size:100%;
 	background-repeat:no-repeat; 
 	left:75%;
-	bottom:0%;/*84%*/
+	bottom:0%;
 	z-index:0;
 	margin:-186px 0 0 -168px;
 	
@@ -142,27 +119,24 @@ a {
 
 /* 動畫 豬走路 */
 @-webkit-keyframes PigWalk{
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
       0% {			
-			background: url(image/Pig1.png);
-			background-size:100%;
-			width:471px;
-			height:386px;	
+		background: url(image/Pig1.png);
+		background-size:100%;
+		width:471px;
+		height:386px;	
 		 }
      50% {
-			background: url(image/Pig2.png);
-			background-size:100%;
-			width:471px;
-			height:386px;
+		background: url(image/Pig2.png);
+		background-size:100%;
+		width:471px;
+		height:386px;
 		 }
     
 	100% {			
-			background: url(image/Pig1.png);
-			background-size:100%;
-			width:471px;
-			height:386px;
+		background: url(image/Pig1.png);
+		background-size:100%;
+		width:471px;
+		height:386px;
 		 }
 }
 
@@ -175,7 +149,7 @@ a {
 	background-size:100%;
 	background-repeat:no-repeat; 
 	left:220%;
-	top:500px;/*84%*/
+	top:500px;
 	z-index:3;
 	margin:-186px 0 0 -168px;
 	-webkit-animation-name:BatFly1;
@@ -193,7 +167,7 @@ a {
 	background-size:100%;
 	background-repeat:no-repeat; 
 	left:220%;
-	top:600px;/*84%*/
+	top:600px;
 	z-index:3;
 	margin:-186px 0 0 -168px;
 	-webkit-animation-name:BatFly2;
@@ -211,7 +185,7 @@ a {
 	background-size:100%;
 	background-repeat:no-repeat; 
 	left:220%;
-	top:700px;/*84%*/
+	top:700px;
 	z-index:3;
 	margin:-186px 0 0 -168px;
 	-webkit-animation-name:BatFly3;
@@ -222,9 +196,6 @@ a {
 
 /* 動畫 蝙蝠1飛 */
 @-webkit-keyframes BatFly1 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {			
 		background: url(image/Bat1.png);
 		background-size:100%;
@@ -252,9 +223,6 @@ a {
 
 /* 動畫 蝙蝠2飛 */
 @-webkit-keyframes BatFly2 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {			
 		background: url(image/Bat1.png);
 		background-size:100%;
@@ -282,9 +250,6 @@ a {
 
 /* 動畫 蝙蝠3飛 */
 @-webkit-keyframes BatFly3 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {			
 		background: url(image/Bat1.png);
 		background-size:100%;
@@ -421,13 +386,13 @@ a {
 	position:absolute;	
 	top:225px; 
 	left:10%; 
+	color: #FF6B9D;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
 }
 
 /* 動畫 豬1飛 */
 @-webkit-keyframes PigFly1 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {		
 		opacity:0.8;
 		-webkit-transform: translateX(0px) translateY(0px);
@@ -451,9 +416,6 @@ a {
 
 /* 動畫 豬2飛 */
 @-webkit-keyframes PigFly2 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {		
 		opacity:1;
 		-webkit-transform: translateX(0px) translateY(0px);
@@ -477,9 +439,6 @@ a {
 
 /* 動畫 豬3飛 */
 @-webkit-keyframes PigFly3 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {		
 		opacity:1;
 		-webkit-transform: translateX(0px) translateY(0px);
@@ -554,9 +513,6 @@ a {
 
 /* 動畫 氣球1飛 */
 @-webkit-keyframes BalloonFly1 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {	
 		-webkit-transform: translateX(0px) translateY(0px);
 	}	
@@ -576,9 +532,6 @@ a {
 
 /* 動畫 氣球2飛 */
 @-webkit-keyframes BalloonFly2 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {	
 		-webkit-transform: translateX(0px) translateY(0px);
 	}	
@@ -602,9 +555,6 @@ a {
 
 /* 動畫 氣球3飛 */
 @-webkit-keyframes BalloonFly3 {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {	
 		-webkit-transform: translateX(0px) translateY(0px);
 	}	
@@ -627,6 +577,9 @@ a {
 	position:absolute;	
 	top:50px; 
 	left:20%; 
+	color: #FF6B9D;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
 }
 
 /* 繪製 小鳥 */
@@ -648,9 +601,6 @@ a {
 
 /* 動畫 小鳥飛 */
 @-webkit-keyframes BirdFly {
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
 	0% {			
 		background: url(image/Bird3.png);
 		background-size:100%;
@@ -778,18 +728,15 @@ a {
 
 /* 動畫 草1 */
 @-webkit-keyframes Grass1{
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
       0% {			
-			opacity:1;			
+		opacity:1;			
 		 }
      50% {
-			opacity:0.2;			 			
+		opacity:0.2;			 			
 		 }
     100% 
 		 {			
-			opacity:1;			
+		opacity:1;			
 		 }
 }
 
@@ -811,18 +758,15 @@ a {
 
 /* 動畫 草2 */
 @-webkit-keyframes Grass2{
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
       0% {			
-			opacity:0.2;			
+		opacity:0.2;			
 		 }
      50% {
-			opacity:1;			 			
+		opacity:1;			 			
 		 }
     100% 
 		 {			
-			opacity:0.2;			
+		opacity:0.2;			
 		 }
 }
 
@@ -1007,6 +951,9 @@ height:200px;
 /* 標題文字排版 */
 .title{
 line-height:170px;
+color: #FF6B9D;
+font-weight: bold;
+text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
 }
 
 /* 標題雲1排版 */
@@ -1052,6 +999,9 @@ line-height:170px;
 	position:absolute;
 	top:30%;	
 	left:106%;
+	color: #FF6B9D;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
 }
 
 /* 繪製 內容2 */
@@ -1059,6 +1009,9 @@ line-height:170px;
 	position:absolute;
 	top:45%;	
 	left:106%;
+	color: #FF6B9D;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
 }
 
 /* 繪製 內容3 */
@@ -1066,6 +1019,9 @@ line-height:170px;
 	position:absolute;
 	top:60%;	
 	left:106%;
+	color: #FF6B9D;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
 }
 
 /* 繪製 內容4 */
@@ -1073,6 +1029,9 @@ line-height:170px;
 	position:absolute;
 	top:50%;	
 	left:18%;
+	color: #FF6B9D;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
 	-webkit-animation-name:content4;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-duration:3s;
@@ -1081,17 +1040,14 @@ line-height:170px;
 
 /* 動畫 內容4 */
 @-webkit-keyframes content4{
-	/*
-	%數為動畫的時間軸長度百分比
-	*/
       0% {			
-			opacity:1;			
+		opacity:1;			
 		 }
      50% {
-			opacity:0.2;			 			
+		opacity:0.2;			 			
 		 }
     100% 
 		 {			
-			opacity:1;			
+		opacity:1;			
 		 }
 }
